@@ -23,4 +23,5 @@ print(min(sk1,sk2,sk3))
 print("--------------------")
 
 svars=int(input("Ievadi svaru: "))
-garums=int(input("Ievadi garumu: "))
+garums=int(input("Ievadi garumu metros: ")) 
+optim=garums*100-svars
