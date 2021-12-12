@@ -22,6 +22,13 @@ sk3 = int(input("Ievadi 3. skaitli: "))
 print(min(sk1,sk2,sk3))
 print("--------------------")
 
-svars=int(input("Ievadi svaru: "))
-garums=int(input("Ievadi garumu metros: ")) 
-optim=garums*100-svars
+svars = float(input("Ievadi svaru kg: "))
+garums =  float(input("Ievadi garumu m: ")) 
+optim = garums*100-svars
+if -7<=svars-optim<=7:
+  print("Normāls svars!")
+elif svars-optim>7:
+  print("Pārāk liels svars!")
+else:
+  print("Pārāk mazs svars!")
+print("--------------------")
